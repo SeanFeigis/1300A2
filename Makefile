@@ -31,6 +31,8 @@ reduceSpace.o: reduceSpace.c
 trim.o: trim.c
 	gcc -ansi -Wall -c trim.c
 
-clean : 
+clean: 
 	rm findWords.o chop.o convertLowercase.o replaceDigits.o replacePunc.o reduceSpace.o trim.o convertLowerCase.o findWords
 
+wordBag: 
+	gcc -ansi -Wall -o wordBag wordBag.c
